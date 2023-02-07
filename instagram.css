@@ -1,0 +1,258 @@
+body{
+    font-family: 'Gamja Flower', cursive;
+}
+#container {
+    height: 900px;
+    display: flex;
+
+   }   
+/* 구역1 ---------------------------------------*/
+#nav{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 740px;
+    margin-left: 2%;
+    border-right: 1px solid#DCDCDC ;
+    position:fixed;
+}
+
+#nav:hover{
+    cursor: pointer;
+}
+.nav-bar{
+    display: flex;
+    text-align : center;
+}
+
+.nav-bar>img:hover{
+    transform: scale(1.1)
+}
+
+.nav-bar > img{
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+
+.nav-bar> p{
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+  }
+
+
+/* 구역2-------------------------------------- */
+#main{
+    margin-left: 30%;
+    margin-right: 2%;
+  
+}
+
+.story-id>div>img,.story-id>div>p:hover,.feed>div>img,.feed>div>p:hover,.feed>div>div>p:hover{
+    cursor: pointer;
+}
+
+.story{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid	#DCDCDC;
+    border-radius: 10px/10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.story-id{
+    display: flex;
+    flex-direction: column;
+}
+
+.story-id >div> p{
+    margin: 0px;
+    text-align: center;
+}
+
+
+.story-pic{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, red 0%,  orange 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.story-pic>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    margin: 2.2px;   
+}
+
+
+
+.feed{
+    border-top: 1px solid	#DCDCDC;
+    border-left: 1px solid	#DCDCDC;
+    border-right: 1px solid	#DCDCDC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.feed-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-top>img{
+    margin:12px;
+}
+
+.feed-top>img:nth-child(3):hover{
+    opacity: 0.5;
+}
+
+.feed-mainbar>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+
+.feed-mainbar>img:hover{
+    opacity: 0.5;
+}
+
+.feed-mainbottom{
+    margin: 10px;
+}
+
+.feed-comment{
+    display: flex;
+}
+
+.feed-comment>p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.feed-comment>span{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+textarea{
+    width: 390px;
+    border: none;
+    resize: none;
+    font-family: 'Gamja Flower', cursive;
+}
+textarea:focus{
+    outline: none; 
+}
+
+.comment-upload{
+    border: none;
+    background-color: #fff;
+    color: #00BFFF;
+    font-family: 'Gamja Flower', cursive;
+    font-weight: bold;
+}
+
+.comment-upload:hover{
+    color:#000080;
+}
+
+.final{
+    padding: 30px;
+    text-align : center;
+}
+
+
+/* 구역3-------------------------------------- */
+
+#sidebar{
+    margin-top: 30px;
+    width: 275px;
+}
+
+.other-id>img,.other-id>div>p:nth-child(1){
+    cursor: pointer;
+}
+
+.recommand-hello{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+}
+
+.recommand-hello > span:nth-child(2){
+    color: #3c3c3c;
+    font-size: small;
+}
+.recommand-hello > span:nth-child(2):hover{
+    color:darkgray;
+    cursor: pointer;
+}
+
+.other-id{
+    display: flex;
+}
+
+.recommand >.other-id > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 70%;
+    margin: 5px;
+}
+
+.other-id>div>p{
+    margin: 0px;
+}
+
+.other-id > div > p:nth-child(2) {
+    color: grey;
+    font-size: small;
+    margin-right:50px;
+ }
+
+ .other-id > p{
+    color: 	#00BFFF;
+    font-weight: bold;
+    font-size: small;
+ }
+
+ .other-id > p:hover{
+    color: #000080;
+    cursor: pointer
+ }
+
+.information{
+    width: 265px;
+    margin-top: 20px;
+
+}
+.information > span{
+    color: 	#C0C0C0;
+    font-size: 8px;
+}
+.information > p{
+    color: 	#C0C0C0;
+    font-size: small;
+}
+
+.information > span:nth-child(2n+1):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
